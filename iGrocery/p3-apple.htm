@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title> iGrocery - Fruit Aisle</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+ <link rel="stylesheet" type="text/css" href="P3style.css">
+
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+      <!-- jQuery library -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+      
+      <!-- Popper JS -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+      
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+          <script src="https://kit.fontawesome.com/0c7895b5e7.js" crossorigin="anonymous"></script>
+
+
+
+</head>
+<body>
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+   <li class="nav-item active">
+    <a class="nav-link" href="HomePage.html">iGrocery</a>
+   </li> 
+   <li class="nav-item">
+    <a class="nav-link" href="HomePage.html">Home</a>
+   </li> 
+   <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      Aisles
+    </a>
+
+    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+      <a class="dropdown-item" href="VegetableAisle(P2).html">Vegetables</a>
+      <a class="dropdown-item" href="P2-fruits.htm">Fruits</a>
+      <a class="dropdown-item" href="Meat&Fish.html">Meat & Fish</a>
+      <a class="dropdown-item" href="P2.html">Grains</a>
+      <a class="dropdown-item" href="#">Bakery</a>
+      <a class="dropdown-item" href="Aisle Page.html">Frozen Products</a>
+     
+    </div>
+  </li>
+   <li class="nav-item">
+    <a class="nav-link" href="P4.html">Cart</a>
+   </li>
+   <li class="nav-item">
+    <a class="nav-link" href="#login">Login</a>
+   </li>  
+  </ul>
+  <form class="form-inline">
+   <input class="form-control" type="text" placeholder="search...">
+  </form>	
+ </nav>
+
+ <div class="container">
+  <div class="row aisle">
+   <h1 class="col">Apples<hr></h1>
+  </div>
+  <div class="row aisle">
+   <img src="Apples.jpg" class="col" alt="Apples" height=300px width=300px>
+   <div class="col">
+    <h2><em>$6.00</em></h2>
+    <ul>
+     <li>Brand: iGrocery</li>
+     <li>Weight: 300g</li>
+    </ul>
+    <label for="quantity">Quantity:</label>
+    <select name="quantity" id="quantity">
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+     <option value="6">6</option>
+     <option value="7">7</option>
+     <option value="8">8</option>
+     <option value="9">9</option>
+     <option value="10">10</option>
+    </select>
+   <input type="submit" value="Add to Cart">
+  </div>
+ </div>
+ <footer class="row">
+  <div class="col-md-4">
+   <h3>Locations</h3>
+    <a href="">Address 1</a><br>
+    <a href="">Address 2</a><br>
+    <a href="">Address 3</a>
+   </div>
+   <div class="col-md-4">
+    <h3>Careers</h3>
+    <a href="">Office</a><br>
+    <a href="">In-Store</a><br>
+    <a href="">Other</a>
+   </div>
+   <div class="col-md-4">
+    <h3>Quick Links</h3>
+    <a href="">Contact</a><br>
+    <a href="">FAQ</a><br>
+    <a href="">Help</a>
+   </div>
+  </footer>
+ </div>
+</body>
+</html>

@@ -1,0 +1,57 @@
+body{
+	background-image: url('vege.jpg');
+	height:max-content;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size:cover;
+        overflow-x: hidden;
+	font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+div li{
+	color:#3ef53b;
+}
+.aisle {
+	background-color:#ffffff;
+}
+
+.product {
+	background-color:#ffffff;
+	float:left;
+        overflow-x: hidden;
+}
+
+.product:hover{
+	background-color:#d9d9d9;
+}
+
+img{
+	float:left;
+}
+
+p{
+	float:right;
+	color:#3ef53b;
+	font-size:25px;
+	font-weight:bold;
+	margin:5px;
+	text-align:right;
+	text-decoration:underline;
+	text-transform:capitalize;
+}
+
+.price {
+	color:#000000;
+	font-size:45px;
+	text-decoration:none;
+	text-align:right;
+}
+footer{
+    background:#000000;
+    text-align:center;
+	padding:10px;
+	margin:20px;
+}
+footer h3{
+	color:#ffffff;
+}

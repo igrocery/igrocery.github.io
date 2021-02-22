@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0c7895b5e7.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .navbar-nav .nav-item .nav-link {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.7s;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+            color: gold;
+            border-bottom: 2px solid gold;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .center {
+            width: 150px;
+            /* margin: 40px auto; */
+        }
+    </style>
+</head>
+
+<body>
+
+
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-white font-weight-bold" href="HomePage.html">iGrocery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deals</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Aisles
+                        </a>
+                
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="VegetableAisle(P2).html">Vegetables</a>
+                          <a class="dropdown-item" href="P2-fruits.htm">Fruits</a>
+                          <a class="dropdown-item" href="Meat&Fish.html">Meat and Fishes</a>
+                          <a class="dropdown-item" href="P2.html">Grains</a>
+                          <a class="dropdown-item" href="#">Bakery</a>
+                          <a class="dropdown-item" href="Aisle Page.html">Frozen Products</a>
+                         
+                        </div>
+                      </li>
+                    
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="P4.html">Cart</a>
+                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign In</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="bg-light p-4">
+        <h1 class="text-center" style="font-family: 'Passion One', cursive;">CART PAGE</h1>
+    </div>
+
+    <div class="container mb-5">
+        <h3 class="mt-5" style="font-family: 'Passion One', cursive;">CART (3 items)</h3>
+        <div class="row mt-2">
+            <div class="col-md-6">
+                <div class="row shadow">
+                    <div class="col-md-5">
+                        <img src="Grain Images/wheat.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 p-5">
+                        <h4 class="" style="font-family: 'Passion One', cursive;">Wheat</h4>
+                        <p class="mt-3 mb-0 font-weight-bold">Number of items:</p>
+                        <div class="center mt-2">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                        <i class="fas fa-minus"></i>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="5" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                        <i class="fas fa-plus"></i>
+                                </button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-danger mt-2"><i class="fas fa-trash-alt mr-2"></i>Remove</button>
+                        <p class="font-weight-bold text-right">$30</p>
+                    </div>
+                </div>
+                <div class="row shadow mt-5">
+                    <div class="col-md-5">
+                        <img src="Grain Images/oats.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 p-5">
+                        <h4 class="" style="font-family: 'Passion One', cursive;">Oats</h4>
+                        <p class="mt-3 mb-0 font-weight-bold">Number of items:</p>
+                        <div class="center mt-2">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                        <i class="fas fa-minus"></i>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="5" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                        <i class="fas fa-plus"></i>
+                                </button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-danger mt-2"><i class="fas fa-trash-alt mr-2"></i>Remove</button>
+                        <p class="font-weight-bold text-right">$25</p>
+                    </div>
+                </div>
+                <div class="row shadow mt-5">
+                    <div class="col-md-5">
+                        <img src="Grain Images/quinoa.jpg" alt="">
+                    </div>
+                    <div class="col-md-7 p-5">
+                        <h4 class="" style="font-family: 'Passion One', cursive;">Quinoa</h4>
+                        <p class="mt-3 mb-0 font-weight-bold">Number of items:</p>
+                        <div class="center mt-2">
+                            <div class="input-group">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                        <i class="fas fa-minus"></i>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="3" min="1" max="100">
+                                <span class="input-group-btn">
+                                    <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                        <i class="fas fa-plus"></i>
+                                </button>
+                                </span>
+                            </div>
+
+                        </div>
+                        <button class="btn btn-danger mt-2"><i class="fas fa-trash-alt mr-2"></i>Remove</button>
+                        <p class="font-weight-bold text-right">$45</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-5 shadow h-75 p-5">
+                <h2 style="font-family: 'Passion One', cursive;">The total amount of</h2>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <p class="font-weight-bold">Amount</p>
+                    </div>
+                    <div class="col-md-6 text-center">
+                        <p class="font-weight-bold">$100</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="font-weight-bold">QST(10%)</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p class="font-weight-bold text-center" ">$10</p>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <p class="font-weight-bold ">GST(5%)</p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <p class="font-weight-bold text-center " ">$5</p>
+                    </div>
+                </div>
+                <hr>
+                <div class="row ">
+                    <div class="col-md-6 ">
+                        <p class="font-weight-bold ">Total (with tax)</p>
+                    </div>
+                    <div class="col-md-6 ">
+                        <p class="font-weight-bold text-center " ">$115</p>
+                    </div>
+                </div>
+                <button class="btn btn-info btn-block btn-lg ">Go to checkout</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

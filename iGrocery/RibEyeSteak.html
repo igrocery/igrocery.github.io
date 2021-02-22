@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iGrocery</title>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/0c7895b5e7.js" crossorigin="anonymous"></script>
+    <style>
+
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .navbar-nav .nav-item .nav-link {
+            margin-left: 10px;
+            margin-right: 10px;
+            color: #fff;
+            font-weight: 600;
+            transition: 0.7s;
+            border-bottom: 2px solid transparent;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+            color: gold;
+            border-bottom: 2px solid gold;
+        }
+        
+        img {
+            width: 100%;
+        }
+        
+        .center {
+            width: 150px;
+            /* margin: 40px auto; */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand text-white font-weight-bold" href="HomePage.html">iGrocery</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="HomePage.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deals</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Aisles</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="VegetableAisle(P2).html">Vegetables</a>
+                          <a class="dropdown-item" href="P2-fruits.htm">Fruits</a>
+                          <a class="dropdown-item" href="Meat&Fish.html">Meat & Fish</a>
+                          <a class="dropdown-item" href="P2.html">Grains</a>
+                          <a class="dropdown-item" href="#">Bakery</a>
+                          <a class="dropdown-item" href="Aisle Page.html">Frozen Products</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Recipes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="P4.html">Cart</a>
+                    </li>
+                    <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+
+                    </form>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <nav aria-label="breadcrumb" class="bg-white mt-5">
+            <ol class="breadcrumb bg-white">
+                <li class="breadcrumb-item"><a href="HomePage.html" style="color: gray;">Home</a></li>
+               
+                <li class="breadcrumb-item"><a href="Meat&Fish.html" style="color: gray;">Meat & Fish</a></li>
+                <li class="breadcrumb-item text-black" aria-current="page">Rib Eye Steak</li>
+            </ol>
+        </nav>
+        <hr>
+    </div>
+
+    <div class="container mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="\Images\RibEye.jpg" alt="Rib Eye Steak">
+            </div>
+            <div class="col-md-6 p-5">
+                <h1 style="font-family: 'Passion One', cursive;">Rib Eye Steak</h1>
+                <p class="font-weight-bold text-black">Price: $12/unit</p>
+                <p class="text-justify">approx. 250g</p>
+                <p class="font-weight-bold text-black">Quantity:</p>
+                <div class="center">
+                    <div class="input-group">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                                <i class="fas fa-minus"></i>
+                        </button>
+                        </span>
+                        <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100">
+                        <span class="input-group-btn">
+                            <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                                <i class="fas fa-plus"></i>
+                        </button>
+                        </span>
+                    </div>
+                </div>
+
+                <small>Valid until February 19, 2021</small><br>
+                <button class="btn btn-dark mt-5 btn-lg">Add to Cart</button>
+                <h3 class="mt-4" style="font-family: 'Passion One', cursive;">Product Description</h3>
+                <p class="text-justify">The rib eye or ribeye is a beefsteak from the rib section. The rib section of beef spans from ribs six through twelve. 
+                    Ribeye steaks are mostly composed of the longissimus dorsi muscle but also contain the complexus and spinalis muscles.</p>
+                <button class="btn btn-dark btn-sm">More Description</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

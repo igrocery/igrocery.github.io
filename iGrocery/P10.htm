@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>User Editor | iGROCERY</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="BackStyle.css">
+</head>
+<body>
+ <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+  <ul class="navbar-nav">
+   <li class="nav-item active">
+    <a class="nav-link" href="HomePage.html">iGrocery</a>
+   </li> 
+   <li class="nav-item">
+    <a class="nav-link" href="iGroceryBackStore.html">Home</a>
+   </li> 
+   <li class="nav-item">
+    <a class="nav-link" href="P9.htm">User</a>
+   </li> 
+   <li class="nav-item">
+    <a class="nav-link" href="backstore_product.html">Storage</a>
+   </li>
+   <li class="nav-item">
+    <a class="nav-link" href="BackStoreOrderList.html">Orders</a>
+   </li>  
+  </ul>	
+ </nav>
+
+ <div class="container-fluid">
+  <div class="row aisle">
+   <h1 class="col">User Editor</h1>
+  </div>
+  <div class="container-xs product border-secondary">
+   <form class="row">
+    <div class="margin col-sm-5">
+      <label class="text mb-2 mr-sm-2" for="fn">First Name:</label>
+      <input type="text" class="form-control" id="fn" name="fname">
+      <label class="text mb-2 mr-sm-2" for="ln">Last Name:</label>
+      <input type="text" class="form-control" id="ln" name="lname">
+      <label class="text mb-2 mr-sm-2" for="email">Email:</label>
+      <input type="text" class="form-control" id="email" name="email">
+     </div>
+     <div class="margin col-sm-5">
+      <label class="text mb-2 mr-sm-2" for="ad">Adresse:</label>
+      <input type="text" class="form-control" id="ad" name="adresse">
+      <label class="text mb-2 mr-sm-2" for="post">Postal Code:</label>
+      <input type="text" class="form-control" id="post" name="postal" maxlength="6" size="6">
+     </div>
+    <div class="margin col-sm-4 d-block">
+     <button type="submit" class="btn btn-secondary">Submit</button>
+     <button type="reset" class="btn btn-secondary">Reset</button>
+     <button type="reset" class="btn btn-secondary">Cancel</button> 
+    </div>
+   </form>
+  </div>
+ </div>
+</body>
+</html>
