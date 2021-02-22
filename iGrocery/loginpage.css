@@ -1,0 +1,231 @@
+body
+{
+	background: url(mainwp.jpg);
+    background-size: cover;
+    background-position: 80% 10%;
+    height:max-content;
+	background-attachment:fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+
+
+.img {
+    max-width: 100%;
+    height: auto;
+  }
+
+.jumbotron-image {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:fixed;
+  
+}
+
+  
+.mb-4{
+text-align: center;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size:70px ;
+}
+
+
+.jumbotron{
+    margin: bottom 0;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+
+  footer{
+    background:#000000;
+    text-align:center;
+	padding:30px;
+	margin-top:250px;
+    margin-right: 0;
+    margin-left: 0;
+}
+footer h3{
+	color:#ffffff;
+}
+
+.col-sm-4{
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
+
+.product {
+	background-color:#ffffff;
+	float:left;
+}
+
+.product:hover{
+	background-color:#d9d9d9;
+}
+
+.loginbox{
+	opacity: 0.7;
+    width: 320px;
+    height: 420px;
+    background: #000;
+    color: #fff;
+    top: 40%;
+    left: 50%;
+    position: relative;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 60px 30px;
+    margin-top: 40px;
+}
+
+.avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -50px;
+    left: calc(50% - 50px);
+opacity: 2;
+}
+
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.loginbox p{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+.loginbox input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.loginbox input[type="text"], input[type="password"]
+{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+.loginbox input[type="submit"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #3c763d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.loginbox input[type="submit"]:hover
+{
+    background:#38f831;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
+.loginbox input[type="button"]
+{
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #3c763d;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.loginbox a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+body{ 
+    overflow-y : auto; 
+} 
+
+.loginbox a:hover
+{
+    color: #ffc107;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
