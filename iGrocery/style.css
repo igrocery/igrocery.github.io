@@ -1,0 +1,233 @@
+body{
+    margin:0;
+    font-family:system-ui;
+}
+
+.parallax, .parallax{
+background-image: url('vege.jpg');
+height:max-content;
+background-attachment:fixed;
+background-position: center;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+.page-title{
+    background:rgba(0,0,0,0.5);
+    text-align:center;
+    color:rgb(255, 255, 255);
+    padding:50px;
+    font-variant: small-caps;
+    font-size:100px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+.sticky{
+    position:fixed ;
+    top:0;
+    width:100%;
+}
+
+.menu{
+    background: #000000;
+    text-align: center;
+}
+.menu-ul{
+    margin:0;
+    padding:0;
+    display:inline;
+}
+
+.menu-ul li{
+    font-size: 17 px;
+    list-style: none;
+    display:inline-block;
+    padding:25px 25px 26px 25px;
+}
+
+.a-menu, .a-links{
+    text-decoration:none ;
+    color:white;
+    transition: all 0.3s ease 0s;
+}
+
+.menu-ul li:hover{
+    background:#38f831;
+    transform: scale(1.1);
+    transition: all 0.3s ease 0s;
+}
+
+.search-box{
+    border:1px solid white;
+    border-radius:50px;
+    background:white;
+    width:max-content;
+    display: inline-block;
+    margin:8px;
+}
+
+.search-box:hover{
+    box-shadow: 0 0 10px 2px #42f53f;
+    border:1px solid #3ef53b;
+    transition: all 0.3s ease 0s;
+}
+
+.search-input{
+    width:250px;
+    border:none;
+    font-size:16px;
+outline:none;
+background:transparent;
+margin:15px 0 0 10px;
+}
+
+i{
+    font-size:20px;
+    margin:0 10px 0 0;
+}
+
+button{
+    background: transparent;
+    border:none;
+    outline:none;
+}
+
+.container, .deals-container{
+    margin:50px 50px 50px 5%;
+    width:90%;
+    text-align:center;
+}
+
+.categories{
+    width:max-content;
+    margin:25px;
+    border: 1px solid #36f055;
+
+display:inline-block;
+
+}
+
+.categories:hover{
+    box-shadow:0 0 10px 3px #3cf723;
+    transition: all 0.3s ease 0s;
+}
+
+.item-images{
+height: 200px;
+width: 300px;
+border-radius:0 0 50px 50px;
+padding: 50px;
+}
+
+.image-title{
+    text-align:center;
+    padding:10px ;
+    font-weight: bold;
+    color: black;
+}
+
+a{
+    text-decoration:none;
+
+}
+
+.title{
+    padding:50px;
+    font-size:50px;
+    font-weight:bold;
+    letter-spacing:10px;
+    color:white;
+    background:rgba(0,0,0,0.5);
+}
+
+.deal{
+    padding: 50px;
+    font-size:20px;
+    font-weight:bold;
+    color:white;
+display:inline-block;
+margin:20px;
+max-width: 20%;
+background:#36f055;
+
+}
+
+.coupon-btn{
+    border:1px solid white;
+    color:white;
+    margin:10px;
+    padding:10px;
+    border-radius:20px;
+
+}
+
+.coupon-btn:hover{
+    box-shadow:0 0 5px 5px white inset;
+    transition: all 0.3s ease 0s;
+}
+
+
+.footer{
+    background:(0,0,0,0.5);
+    text-align:center;
+padding:20px;
+}
+
+.quick-links{
+    color:rgb(0, 0, 0);
+    font-size:20px;
+    font-weight:bold;
+    display:inline-block;
+    min-width:30%;    
+}
+
+.quick-links ul{
+  padding:0;  
+}
+
+.quick-links li{
+    list-style:none;
+    padding:10px;
+font-weight:300;
+}
+
+
+.a-links{
+    color:rgb(44, 243, 44)
+}
+
+#custom-button {
+    padding: 10px;
+    color: white;
+    background-color: #0a972d;
+    border: 1px solid #000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+  
+#custom-button:hover {
+    background-color: #0b6b23;
+}
+  
+#custom-text {
+    margin-left: 10px;
+    font-family: sans-serif;
+    color: #aaa;
+}
+  
+.column {
+    flex: 50%;
+    padding: 0 4px;
+    text-align:center
+}
+
+.row {
+    display: flex;
+    flex-wrap: nowrap;
+    padding: 0 4px;
+}
+
+.bg-color{
+    color: rgb(35, 172, 17);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Second website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+<script>
+    functionstickyMenu();{
+        var sticky=document.geElementById('sticky');
+        if(window.pageYOffset>220){
+            sticky.classList.add('sticky');
+    
+    }
+    else{
+        sticky.classList.remove('sticky');
+    }
+    }
+    window.onscroll = function(){
+        stickyMenu();
+    }
+</script>
+
+</head>
+
+<body>
+    <input type="file" id="real-file" hidden="hidden" />
+    <button type="button" id="custom-button">CHOOSE A FILE</button>
+    <span id="custom-text">No file chosen, yet.</span>
+
+    <form action="#">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" name="quantity" min="1" max="99">
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+</html>
