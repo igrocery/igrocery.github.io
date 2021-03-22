@@ -63,13 +63,20 @@
   <div class="row aisle">
    <img src="Bananas.jpg" class="col" alt="Bananas" height=300px width=300px>
    <div class="col">
-    <h2><em>$2.50</em></h2>
+    <h2><em>$3.00</em></h2>
     <ul>
      <li>Brand: iGrocery</li>
      <li>Weight: 300g</li>
+     <li id="show" style="cursor: pointer;" onclick="description()"><u>Show Description</u></li>
+     <div id="description" style="display:none;">
+      <li> These bananas were produced here in Canada in our special greenhouse project. 
+       They were produced pesticide free and are a bio product.</li>
+      <li style="cursor: pointer;" onclick="antidescription()"><u>Hide Description</u></li>
+     </div>
     </ul>
     <label for="quantity">Quantity:</label>
-    <select name="quantity" id="quantity">
+    <select name="quantity" id="quantity" 
+     onchange="document.getElementById('subtotal').innerHTML=('Subtotal: $'+(3*document.getElementById('quantity').value)+'.00')">
      <option value="1">1</option>
      <option value="2">2</option>
      <option value="3">3</option>
@@ -81,6 +88,7 @@
      <option value="9">9</option>
      <option value="10">10</option>
     </select>
+   <h6><em id="subtotal">Subtotal: $3.00</em></h6> 
    <input type="submit" value="Add to Cart">
   </div>
  </div>
@@ -105,5 +113,22 @@
    </div>
   </footer>
  </div>
+ <script>
+  function description() {
+   document.getElementById("description").style.display = "initial";
+   document.getElementById("show").style.display = "none";
+  }
+  function antidescription() {
+   document.getElementById("description").style.display = "none";
+   document.getElementById("show").style.display = "initial";
+  }
+  window.onbeforeunload = function() {
+   localStorage.setItem('quantity', document.getElementById('#quantity').val());
+  }
+  window.onload = function() {
+   var quantity = localStorage.getItem('quantity');
+   if (quantity !== null) document.getElementById('#quantity').val(quantity); 
+  }
+ </script>
 </body>
 </html>
