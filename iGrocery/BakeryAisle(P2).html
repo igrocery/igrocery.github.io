@@ -9,16 +9,14 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Passion+One&family=Roboto&display=swap" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<!-- Popper JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-<!-- Latest compiled JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <style>
         * {
             padding: 0;
@@ -50,7 +48,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand text-white font-weight-bold" href="#">iGrocery</a>
+            <a class="navbar-brand text-white font-weight-bold" href="index.html">iGrocery</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -58,25 +56,39 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="test.html">Home</a>
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Deals</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="BakeryAisle(P2).html">Aisles</a>
-                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Aisles
+                        </a>
+                
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" href="VegetableAisle(P2).html">Vegetables</a>
+                          <a class="dropdown-item" href="P2-fruits.htm">Fruits</a>
+                          <a class="dropdown-item" href="Meat&Fish.html">Meat and Fishes</a>
+                          <a class="dropdown-item" href="P2.html">Grains</a>
+                          <a class="dropdown-item" href="BakeryAisle(P2).html">Bakery</a>
+                          <a class="dropdown-item" href="Aisle Page.html">Frozen Products</a>
+                         
+                        </div>
+                      </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Cart</a>
+                        <a class="nav-link" href="P4.html">Cart</a>
                     </li>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 
                     </form>
-
+                    <li class="nav-item">
+                        <a class="nav-link" href="Login Page.html">Sign In</a>
+                    </li>
                 </ul>
 
             </div>
@@ -103,7 +115,9 @@
         <div class="row mt-5">
             <div class="col-md-4">
                 <div class="card shadow">
+               <a href="Bagels(P3).html">
                     <img class="card-img-top" src="bagels.jpg" alt="Card image cap">
+                   </a>
                     <div class="card-body">
                         <h3 class="card-title" style="font-family: 'Passion One', cursive;">Bagels</h3>
                         <p class="font-weight-bold">Price: $6</p>
@@ -114,7 +128,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow">
+                    <a href="Baguette(P3).html">
                     <img class="card-img-top" src="baguette.jpg" alt="Card image cap">
+                    </a>
                     <div class="card-body">
                         <h3 class="card-title" style="font-family: 'Passion One', cursive;">baguette</h3>
                         <p class="font-weight-bold">Price: $7</p>
@@ -125,7 +141,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow">
+                    <a href="Carrotcake(P3).html">
                     <img class="card-img-top" src="carrotcake.jpg" alt="Card image cap">
+                   </a>
                     <div class="card-body">
                         <h3 class="card-title" style="font-family: 'Passion One', cursive;">Cake</h3>
                         <p class="font-weight-bold">Price: <s class="text-muted">$10</s> $8</p>
@@ -138,7 +156,9 @@
         <div class="row mt-5">
             <div class="col-md-4">
                 <div class="card shadow">
+                    <a href="Croissant(P3).html">
                     <img class="card-img-top" src="croissant.jpg" alt="Card image cap">
+                    </a>
                     <div class="card-body">
                         <h3 class="card-title" style="font-family: 'Passion One', cursive;">Croissant</h3>
                         <p class="font-weight-bold">Price: $5</p>
@@ -148,7 +168,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow">
+                    <a href="Loaf(P3).html">
                     <img class="card-img-top" src="loaf.jpg" alt="Card image cap">
+                    </a>
                     <div class="card-body">
                         <h3 class="card-title" style="font-family: 'Passion One', cursive;">Loaf</h3>
                         <p class="font-weight-bold text-danger">Price: $6</p>
@@ -158,7 +180,9 @@
             </div>
             <div class="col-md-4">
                 <div class="card shadow">
+                    <a href="Muffins(P3).html">
                     <img class="card-img-top" src="muffins.jpg" alt="Card image cap">
+                   </a>
                     <div class="card-body">
                         <h3 class="card-title" style="font-family: 'Passion One', cursive;">Muffins</h3>
                         <p class="font-weight-bold">Price: $7.5</p>
