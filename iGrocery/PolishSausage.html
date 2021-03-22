@@ -46,6 +46,8 @@
             width: 150px;
             /* margin: 40px auto; */
         }
+
+        #myP {display: none;}
     </style>
 </head>
 
@@ -137,23 +139,33 @@
                 <small>Valid until February 19, 2021</small><br>
                 <button class="btn btn-dark mt-5 btn-lg">Add to Cart</button>
                 <h3 class="mt-4" style="font-family: 'Passion One', cursive;">Product Description</h3>
-                <p class="text-justify" id="myP">The most popular kiełbasa is also called "Kiełbasa Polska" ("Polish Sausage") or "Kiełbasa Starowiejska" ("Old Countryside Sausage"). 
-                    This one comes closest to what is generally known in America as "kiełbasa" (a Polish sausage). Nowadays, many major meat packers across America offer a 
-                    product called "kiełbasa," usually somewhat different from the original.</p>
-                <button class="btn btn-dark btn-sm" onclick="myFunction()">More Description</button>
+                
+                <p class="text-justify"> The most popular kiełbasa is also called "Kiełbasa Polska" ("Polish Sausage") or "Kiełbasa Starowiejska" ("Old Countryside Sausage")
+                    <span id="dots">...</span><span id="myP"> This one comes closest to what is generally known in America as "kiełbasa" (a Polish sausage). Nowadays, many major meat packers across America offer a 
+                    product called "kiełbasa," usually somewhat different from the original.</span></p>
+                <button class="btn btn-dark btn-sm" onclick="myFunction()" id="myBtn">More Description</button>
             </div>
         </div>
     </div>
 
 
     <script>
+
         function myFunction() {
-      var x = document.getElementById("myP");
-      if (x.style.display === "none") {
-        x.style.display = "block";
-      } else {
-        x.style.display = "none";
-      }
+        var dots = document.getElementById("dots");
+        var myPText = document.getElementById("myP");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        myPText.style.display = "none";
+        } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        myPText.style.display = "inline";
+    }
+
     }
     
     $('button.update').on("click", function () {
