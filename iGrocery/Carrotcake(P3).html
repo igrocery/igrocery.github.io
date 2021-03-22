@@ -59,7 +59,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <a class="navbar-brand text-white font-weight-bold" href="index.html">iGrocery</a>
+            <a class="navbar-brand text-white font-weight-bold" href="#">iGrocery</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -67,39 +67,25 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
+                        <a class="nav-link" href="test.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Deals</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                          Aisles
-                        </a>
-                
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                          <a class="dropdown-item" href="VegetableAisle(P2).html">Vegetables</a>
-                          <a class="dropdown-item" href="P2-fruits.htm">Fruits</a>
-                          <a class="dropdown-item" href="Meat&Fish.html">Meat and Fishes</a>
-                          <a class="dropdown-item" href="P2.html">Grains</a>
-                          <a class="dropdown-item" href="BakeryAisle(P2).html">Bakery</a>
-                          <a class="dropdown-item" href="Aisle Page.html">Frozen Products</a>
-                         
-                        </div>
-                      </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Aisles</a>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Recipes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="P4.html">Cart</a>
+                        <a class="nav-link" href="#">Cart</a>
                     </li>
                     <form class="form-inline my-2 my-lg-0">
                         <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 
                     </form>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Login Page.html">Sign In</a>
-                    </li>
+
                 </ul>
 
             </div>
@@ -109,8 +95,9 @@
     <div class="container">
         <nav aria-label="breadcrumb" class="bg-white mt-5">
             <ol class="breadcrumb bg-white">
-                <li class="breadcrumb-item"><a href="index.html" style="color: gray;">Home</a></li>
-                
+                <li class="breadcrumb-item"><a href="test.html" style="color: gray;">Home</a></li>
+                <li class="breadcrumb-item"><a href="#" style="color: gray;">Online Grocery</a></li>
+                <li class="breadcrumb-item"><a href="#" style="color: gray;">Aisles</a></li>
                 <li class="breadcrumb-item"><a href="BakeryAisle(P2).html" style="color: gray;">Bakery</a></li>
                 
              
@@ -130,15 +117,15 @@
                 <p class="font-weight-bold text-danger">Price: <s class="text-muted">$10</s> $8</p>
                 <p class="font-weight-bold text-black">Quantity:</p>
                 <div class="center">
-                    <div class="input-group">
+                    <div class="input-group carrotcakeDiv">
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-danger btn-number"  data-type="minus" data-field="quant[2]">
+                            <button type="button" class="btn btn-danger btn-number update"  data-type="minus" data-field="quant[2]" data-parent="carrotcake">
                                 <i class="fas fa-minus"></i>
                         </button>
                         </span>
-                        <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="100">
+                        <input type="text" name="quant[2]" class="form-control input-number quantity" value="1" min="1" max="100">
                         <span class="input-group-btn">
-                            <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+                            <button type="button" class="btn btn-success btn-number update" data-type="plus" data-field="quant[2]" data-parent="carrotcake">
                                 <i class="fas fa-plus"></i>
                         </button>
                         </span>
@@ -148,11 +135,13 @@
                 <small>Valid until February 19, 2021</small><br>
                 <button class="btn btn-dark mt-5 btn-lg">Add to Cart</button>
                 <h3 class="mt-4" style="font-family: 'Passion One', cursive;">Product Description</h3>
-                <p class="text-justify">Carrot cake is cake that contains carrots mixed into the batter. Most modern carrot cake recipes have a white cream cheese frosting. Sometimes nuts such as walnuts or pecans are added into the cake batter, as well as spices such as cinnamon, ginger and ground mixed spice. Fruit including pineapple, raisins and shredded coconut can also be used to add a natural sweetness.</p>
-                <button class="btn btn-dark btn-sm">More Description</button>
+                <button class="btn btn-dark btn-sm accordion">More Description</button>
+                <p class="text-justify" id="myP">Carrot cake is cake that contains carrots mixed into the batter. Most modern carrot cake recipes have a white cream cheese frosting.</p>
+                <p class="text-justify product_description">Sometimes nuts such as walnuts or pecans are added into the cake batter, as well as spices such as cinnamon, ginger and ground mixed spice. Fruit including pineapple, raisins and shredded coconut can also be used to add a natural sweetness.</p>
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="js/product1.js"></script>
 
 </body>
 
